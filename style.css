@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+}
+
+header {
+    height: 30px;
+}
+
+.header_container {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.label_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header_container img {
+    height: 26px;
+}
