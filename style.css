@@ -3,7 +3,7 @@
 }
 
 header {
-    height: 30px;
+    height: 80px;
 }
 
 .header_container {
@@ -19,6 +19,32 @@ header {
     align-items: center;
 }
 
-.header_container img {
+.label_img img {
     height: 26px;
+}
+
+.contacts img {
+    height: 30px;
+}
+
+.contacts {
+    display: grid;
+    grid-template-columns: 75px 120px;
+    grid-template-rows: 30px 30px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+.welcome {
+    background-image: url("./assest/welcome_img.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 798px;
+}
+
+.about_container {
+    display: flex;
+    flex-wrap: wrap;
 }
