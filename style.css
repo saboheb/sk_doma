@@ -1,5 +1,11 @@
 * {
     margin: 0;
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 1200px;
+    margin: auto;
 }
 
 header {
@@ -7,7 +13,6 @@ header {
 }
 
 .header_container {
-    max-width: 1400px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -17,6 +22,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .label_img img {
@@ -25,6 +31,28 @@ header {
 
 .contacts img {
     height: 30px;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style-type: none;
+}
+
+.menu li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.menu ul a {
+    text-decoration: none;
+}
+
+.menu ul a:hover {
+    text-decoration: underline;
 }
 
 .contacts {
