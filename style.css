@@ -10,7 +10,7 @@
 
 header {
     height: 80px;
-    background-color: #6E6E6E;
+    background-color: #051622;
 }
 
 .header_container {
@@ -50,7 +50,7 @@ header {
 
 .menu ul a {
     text-decoration: none;
-    color: whitesmoke;
+    color: #1BA098;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
 }
