@@ -3,17 +3,13 @@
     scroll-behavior: smooth;
 }
 
-/* body {
-    max-width: 1200px;
-    margin: auto;
-} */
-
 header {
-    height: 80px;
+    height: 90px;
     background-color: #051622;
 }
 
 .header_container {
+    max-width: 1400px;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -48,7 +44,8 @@ header {
     margin-left: 10px;
 }
 
-.menu ul a {
+.menu ul a,
+.contacts a {
     text-decoration: none;
     color: #1BA098;
     font-family: 'Lato', sans-serif;
@@ -60,23 +57,56 @@ header {
 }
 
 .contacts {
+    margin-top: 10px;
     display: grid;
-    grid-template-columns: 75px 120px;
-    grid-template-rows: 30px 30px;
+    grid-template-columns: 75px 150px;
+    grid-template-rows: 40px 40px;
     text-align: center;
     vertical-align: middle;
     line-height: 30px;
 }
 
-/* .welcome {
-    background-image: url("./assest/welcome_img.png");
+.contacts a {
+    text-decoration: none;
+    color: #1BA098;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+}
+
+main {
+    background-color: #051622;
+}
+
+.welcome {
+    background-image: url(./assest/background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    height: 798px;
-} */
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.greeting {
+    color: white;
+}
+
+.greeting p {
+    text-align: center;
+}
 
 .about_container {
+    max-width: 1400px;
+    margin: auto;
     display: flex;
-    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.about_container h2 {
+    color: #DEB992;
+}
+
+.about_container li {
+    color:#1BA098
 }
