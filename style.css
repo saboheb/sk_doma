@@ -5,7 +5,7 @@
 
 header {
     height: 90px;
-    background-color: #051622;
+/*     background-color: #051622; */
 }
 
 .header_container {
@@ -73,16 +73,18 @@ header {
     font-weight: 400;
 }
 
-main {
+/* main {
     background-color: #051622;
-}
+} */
 
 .welcome {
     background-image: url(./assest/background.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    max-width: 1400px;
     height: 380px;
+    margin: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -108,5 +110,13 @@ main {
 }
 
 .about_container li {
-    color:#1BA098
+}
+
+.arrow_right,
+.arrow_left {
+    width: 20px;
+}
+
+.arrow-left-3 {
+    transform: rotate(180deg);
 }
