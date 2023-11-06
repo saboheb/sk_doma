@@ -4,15 +4,23 @@
 }
 
 header {
-    height: 90px;
-/*     background-color: #051622; */
+    background-image: url(./assest/background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+/*     max-width: 1400px; */
+    height: 800px;
+    margin: auto;
+
 }
 
 .header_container {
     max-width: 1400px;
     margin: auto;
+    padding-top: 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .label_img {
@@ -41,15 +49,16 @@ header {
 
 .menu li {
     display: inline;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .menu ul a,
 .contacts a {
     text-decoration: none;
-    color: #1BA098;
     font-family: 'Lato', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
 }
 
 .menu ul a:hover {
@@ -57,45 +66,27 @@ header {
 }
 
 .contacts {
-    margin-top: 10px;
-    display: grid;
-    grid-template-columns: 75px 150px;
-    grid-template-rows: 40px 40px;
-    text-align: center;
-    vertical-align: middle;
-    line-height: 30px;
+    padding-right: 40px;
 }
 
 .contacts a {
     text-decoration: none;
-    color: #1BA098;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
+    font-weight: 600;
+    font-size: 18px;
+    color: white;
+    vertical-align: middle;
 }
 
-/* main {
-    background-color: #051622;
-} */
-
-.welcome {
-    background-image: url(./assest/background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    max-width: 1400px;
-    height: 380px;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.greeting {
+h1 {
+    padding: 250px 40px;
+    text-align: center;
     color: white;
 }
 
-.greeting p {
-    text-align: center;
+#about {
+    background-color: #dcd5d2
 }
 
 .about_container {
@@ -103,14 +94,25 @@ header {
     margin: auto;
     display: flex;
     justify-content: space-between;
+    padding: 40px;
+
 }
 
 .about_container h2 {
-    color: #DEB992;
+    padding-left: 40px;
+    color: black;
+}
+
+.about_container {
+    line-height: 1.5;
+    font-family: 'Lato', sans-serif;
 }
 
 .projects_container {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    max-width: 1400px;
+    margin: auto;
 }
 
 .slider_line {
@@ -119,21 +121,54 @@ header {
     left: 0;
 }
 
+.slider_wrapper {
+    width: 500px;
+    overflow: hidden;
+    margin: 15px;
+    box-shadow: 1px 1px 10px 2px grey;
+}
+
 .arrow_right,
 .arrow_left {
     width: 20px;
+    padding-top: 150px;
     cursor: pointer;
+}
+
+.arrow_right {
+    padding-left: 25px;
+}
+
+.arrow_left {
+    padding-right: 25px;
 }
 
 .arrow-left-3 {
     transform: rotate(180deg);
 }
 
-.house1 {
-    display: inline-block;
-    padding-right: 50px;
-}
-
 .house1 img {
     max-width: 500px;
+}
+
+.contacts_wrapper {
+    max-width: 1400px;
+    margin: auto;
+    display: flex;
+}
+
+.footer_container p{
+    text-align: center;
+}
+
+.connection {
+    font-family: 'Lato', sans-serif;
+    border: 1px solid black;
+    margin: 10px;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+footer {
+    background-color: #dcd5d2;
 }
