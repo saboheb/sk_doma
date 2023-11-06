@@ -24,4 +24,4 @@ function sliderToRight() {
        sliderLine.style.left = -position + 'px';
 }
 
-arrowLeft.addEventListener('click', sliderToRight)
+arrowLeft.addEventListener('click', sliderToRight);
