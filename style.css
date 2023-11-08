@@ -8,7 +8,6 @@ header {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-/*     max-width: 1400px; */
     height: 800px;
     margin: auto;
 
@@ -155,21 +154,42 @@ h1 {
     max-width: 1400px;
     margin: auto;
     display: flex;
+    align-items: center;
 }
 
-.footer_container p{
-    text-align: center;
-}
 
 .connection {
     font-family: 'Lato', sans-serif;
-    border: 1px solid black;
     margin: 10px;
     line-height: 1.5;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 18px;
+    display: grid;
+    grid-template-columns: 40px 480px;
+    grid-template-rows: 50px 50px 50px;
+}
+
+.connection img {
+    width: 30px;
+}
+
+
+.connection a {
+    text-decoration: none;
+    font-family: 'Lato', sans-serif;
+    color: black;
+}
+
+.connection a:hover {
+    text-decoration: underline;
 }
 
 footer {
     background-color: #dcd5d2;
-        font-family: 'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
+    height: 80px;
+}
+
+.footer_container {
+    text-align: center;
 }
