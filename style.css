@@ -92,9 +92,13 @@ h1 {
     max-width: 1400px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px;
+}
 
+.about_container div {
+    max-width: 680px;
 }
 
 .about_container h2 {
@@ -110,6 +114,7 @@ h1 {
 .projects_container {
     display: flex;
     justify-content: center;
+    align-items: center;
     max-width: 1400px;
     margin: auto;
 }
@@ -130,7 +135,7 @@ h1 {
 .arrow_right,
 .arrow_left {
     width: 20px;
-    padding-top: 150px;
+/*     padding-top: 150px; */
     cursor: pointer;
 }
 
@@ -154,6 +159,7 @@ h1 {
     max-width: 1400px;
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -166,7 +172,7 @@ h1 {
     font-size: 18px;
     display: grid;
     grid-template-columns: 40px 480px;
-    grid-template-rows: 50px 50px 50px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
 }
 
 .connection img {
