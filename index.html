@@ -42,6 +42,7 @@
                 <p>Наши преимущества - Ваша выгода</p>
             </div>
 
+            <div class="call_wrapper">
             <div class="call">
                 <div class="order_the_call">
                     <h2>Заказать обратный звонок</h2>
@@ -51,16 +52,17 @@
 
                 <div class="form">
                     <form action="">
-                        <label for="">Ваше имя:</label>
-                        <input type="text" value="Ваше имя"><br>
-                        <label for="">Ваш телефон:</label>
-                        <input type="text" value="Ваш телефон"><br>
-                        <label for=""></label>
-                        <input type="submit" name="Отправить" id="">
+                        <div class="form_handler">
+                        <label><input type="text" placeholder="Ваше имя"></label>
+                        <label><input type="text" placeholder="Ваш телефон"></label>
+                        <label class="checkbox"><input type="checkbox" name="agree" id="checkbox">Согласие на обработку персональных данных</label>
+                        <button id="button_form">Отправить</button>
+                        </div><!-- form_handler -->
                     </form>
-                </div>
+                </div><!-- form -->
 
             </div>
+            </div><!-- call_wrapper -->
             </div><!-- greeting -->
         </div>
         </header>
