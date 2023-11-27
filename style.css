@@ -5,13 +5,12 @@
 }
 
 header {
-    background-image: url(../sk_doma/assest/3d-rendering-of-house-model.jpg);
+    background-image: url(../sk_doma/assest/Screenshot_20231011_232621_VK.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     height: 800px;
     margin: auto;
-
 }
 
 .header_container {
@@ -57,8 +56,9 @@ header {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
-    font-size: 18px;
-    color: white;
+    font-size: 20px;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
 }
 
 .menu ul a:hover {
@@ -75,14 +75,16 @@ header {
     font-weight: 400;
     font-weight: 600;
     font-size: 18px;
-    color: white;
+    color: orange;
     vertical-align: middle;
 }
 
 h1 {
     text-align: center;
-    color: white;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
     padding-left: 40px;
+ 
 }
 
 .greeting {
@@ -95,7 +97,10 @@ h1 {
 }
 
 .slogan p {
-    color: white;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
+    font-size: 24px;
+    font-weight: 600;
     text-align: center;
 }
 
@@ -143,8 +148,6 @@ h1 {
     cursor: pointer;
 }
 
-
-
 #button_form {
     width: 180px;
     height: 30px;
@@ -154,77 +157,58 @@ h1 {
     cursor: pointer;
 }
 
+/* about section */
 
-#about {
+/* #about {
     background-color: #dcd5d2
-}
+} */
 
 .about_container {
     max-width: 1400px;
     margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
     padding: 40px;
+    flex-wrap: wrap;
 }
 
-.about_container div {
-    max-width: 680px;
+.about_company,
+.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
+
+.about_container img {
+    max-width: 600px;
+}
+
+
 
 .about_container h2 {
     padding-left: 40px;
     color: black;
+    text-align: center;
 }
 
 .about_container {
-    line-height: 1.5;
-    font-family: 'Lato', sans-serif;
+    line-height: 2;
+    font-size: 16px;
 }
 
-.projects_container {
+/* section project */
+
+.project_container {
     display: flex;
     justify-content: center;
-    align-items: center;
-    max-width: 1400px;
-    margin: auto;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.slider_line {
-    display: flex;
-    position: relative;
-    left: 0;
+.project_container img {
+    max-width: 400px;
 }
 
-.slider_wrapper {
-    width: 500px;
-    overflow: hidden;
-    margin: 15px;
-    box-shadow: 1px 1px 10px 2px grey;
-}
-
-.arrow_right,
-.arrow_left {
-    width: 20px;
-/*     padding-top: 150px; */
-    cursor: pointer;
-}
-
-.arrow_right {
-    padding-left: 25px;
-}
-
-.arrow_left {
-    padding-right: 25px;
-}
-
-.arrow-left-3 {
-    transform: rotate(180deg);
-}
-
-.house1 img {
-    max-width: 500px;
-}
 
 .contacts_wrapper {
     max-width: 1400px;
