@@ -198,6 +198,19 @@ h1 {
 
 /* section project */
 
+#progects {
+    max-width: 1400px;
+    margin: auto;
+    border: 1px red solid;
+}
+
+#progects h2 {
+    text-align: center;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
+    font-size: 2em;
+}
+
 .project_container {
     display: flex;
     justify-content: center;
@@ -205,9 +218,32 @@ h1 {
     gap: 20px;
 }
 
-.project_container img {
+.raduga,
+.dom84,
+.shale,
+.chekeril,
+.shudiay,
+.zeleniy {
     max-width: 400px;
+    cursor: pointer;
 }
+
+.big_raduga {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.big_raduga img {
+    width: 70vw;
+}
+
+
+
+/* contacts */
 
 
 .contacts_wrapper {
@@ -244,6 +280,8 @@ h1 {
 .connection a:hover {
     text-decoration: underline;
 }
+
+
 
 footer {
     background-color: #dcd5d2;
