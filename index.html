@@ -14,6 +14,12 @@
     <header>
         <div class="header_container">
 
+            <div class="three_lines">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+
             <nav class="menu">
                 <ul>
                     <li><a href="#about">O компании</a></li>
@@ -29,45 +35,57 @@
                 <a href="viber://chat?number=+79124484005"><img src="./assest/viber_tile_logo_icon_170260.png" alt="icon_viber"></a>
                 
                 <a href="tel:+79658518899"><img src="./assest/phone.png" alt="phone"></a>
-                <a href="tel:+79658518899">+7-965-851-88-99</a>
+                <a  class="tel" href="tel:+79658518899">+7-965-851-88-99</a>
 
             </div><!-- contacts -->
 
         </div><!--  header_container -->
 
-        <div class="greeting">
 
-            <div class="slogan">
-                <h1>СТРОИТЕЛЬНАЯ КОМПАНИЯ "ДОМА"</h1>
-                <p>Наши преимущества - Ваша выгода</p>
-            </div>
-
-            <div class="call_wrapper">
-            <div class="call">
-                <div class="order_the_call">
-                    <h2>Заказать обратный звонок</h2>
-                    <p>Отправьте нам свой номер телефона и мы Вам позвоним!</p>
-                    <hr>
-                </div><!-- order_the_call -->
-
-                <div class="form">
-                    <form action="">
-                        <div class="form_handler">
-                        <label><input type="text" placeholder="Ваше имя"></label>
-                        <label><input type="text" placeholder="Ваш телефон"></label>
-                        <label class="checkbox"><input type="checkbox" name="agree" id="checkbox">Согласие на обработку персональных данных</label>
-                        <button id="button_form">Отправить</button>
-                        </div><!-- form_handler -->
-                    </form>
-                </div><!-- form -->
-
-            </div>
-            </div><!-- call_wrapper -->
-            </div><!-- greeting -->
-        </div>
         </header>
 
     <main>
+        <section class="welcome">
+            <div class="greeting">
+    
+                <div class="slogan">
+                    <h1>СТРОИТЕЛЬНАЯ КОМПАНИЯ "ДОМА"</h1>
+                    <p>Наши преимущества - Ваша выгода</p>
+                </div>
+    
+                <div class="call_wrapper">
+                <div class="call">
+                    <div class="order_the_call">
+                        <h2>Заказать обратный звонок</h2>
+                        <p>Отправьте нам свой номер телефона и мы Вам позвоним!</p>
+                        <hr>
+                    </div><!-- order_the_call -->
+    
+                    <div class="form">
+                        <form action="">
+                            <div class="form_handler">
+                            <label><input type="text" placeholder="Ваше имя"></label>
+                            <label><input type="text" placeholder="Ваш телефон"></label>
+
+                            <div class="check">
+                            <input type="checkbox" name="agree" id="checkbox">
+                            <p class="agree">Согласие на обработку персональных данных</p>
+                            <div class="text_agree">
+                                <p class="cross">&#10060</p>
+                                <p>согласие на обработку персональных данных</p>
+                            </div>
+                        </div><!-- check -->
+
+                            <button id="button_form">Отправить</button>
+                            </div><!-- form_handler -->
+                        </form>
+                    </div><!-- form -->
+    
+                </div><!-- call -->
+                </div><!-- call_wrapper -->
+                </div><!-- greeting -->
+            </section>
+
         <section id="about">
 
             <div class="about_container">
@@ -79,7 +97,7 @@
                         <li>Учредители компании "ДОМА" работают с 2016 года по всей Удмуртии</li>
                         <li>Гарантия от 5 лет на все общестроительные работы</li>
                         <li>Экономьте от 50 000 на услугах риэлтора при продаже своей недвижимости</li>
-                        <li>Инвестором построено 40 домов в мкр Яркий, Ягул, Чекерил</li>
+                        <li>С привлечением инвесторских средств было построено 40 домом в мкр. Яркий,<br>  д. Ягул,д. Хохряки, Орловском и Тихих Зорях.</li>
                     </ul>
                     </div>
                     <img src="./assest/house1.png" alt="house1">
@@ -90,13 +108,29 @@
                     <div class="services_text">
                         <h2>Наши услуги</h2>
                         <ul>
-                            <li>4 технологии строительства:<br>газоблочное, Porotherm, монолитное, бревенчатое (брусовое) и каркасное домостроение</li>
-                            <li>Дома площадью от 48 до 200 кв. м, либой Ваш вариант по Вашим эскизам</li>
-                            <li>стоимость 100 кв. м от 3 000 000 млн рублей</li>
-                            <li>Обязательное геологическое и топографическое изыскание</li>
-                            <li>Срок строительства до 6 месяцев</li>
+                            <li>4 технологии строительства:<br>газоблочное, Porotherm, монолитное, бревенчатое (брусовое) и каркасное домостроение.</li>
+                            <li>Дома площадью от 48 до 200 кв. м, либой Ваш вариант по Вашим эскизам.</li>
+                            <li>стоимость 100 кв. м от 3 000 000 млн рублей.</li>
+                            <li>Обязательное геологическое и топографическое изыскание.</li>
+                            <li>Срок строительства до 6 месяцев.</li>
                         </ul>
                     </div>
+                </div>
+
+                <div class="info">
+                    <h2>Вам доступно:</h2>
+                    <ul>
+                        <li>Ипотечные программы банков: Сбребанк, Дом.рф, ВТБ, АкБарс банк, Россельхозбанк, УБРИР и другие.</li>
+                        <li>Трейд-ин (обмен квартиры на дом, в случае строительного подряда с проживанием до окончания строительства – обсуждается индивидуально), так же возможна оплаты аренды жилья иногородним Заказчикам на период строительства.</li>
+                        <li>Возможен выкуп участка для клиента (индивидуально).</li>
+                        <li>Принимаем материнский капитал.</li>
+                        <li>Сопровождение стройки технадзором.</li>
+                        <li>Помощь в оформлении ипотеки, свой ипотечный брокер!</li>
+                        <li>Доступный по цене опытный проектировщик.</li>
+                        <li>В подарок заказчику предлагается на выбор переезд или клининг.</li>
+                        <li>Если Вы работаете с риэлтором и продаёте свою недвижимость, то мы готовы компенсировать работу риэлтора.</li>
+                        <li>Если у Вас нет риэлтора, то строительная компания "Дома" готова предоставить специалиста по недвижимости бесплатно.</li>
+                    </ul>
                 </div>
 
             </div><!-- about_container -->
@@ -109,13 +143,66 @@
             <div class="project_container">
                 
                 <div class="project">
-                    <img class="raduga" src="./assest/raduga/WP_20170621_003.jpg" alt="reduga1">
-                    <div class="big_raduga">
-                        <img src="./assest/raduga/WP_20170621_003.jpg" alt="bigRaduga">
-                    </div>
-                    <p>Дом 8х7м в Радуга</p>
-                </div>
+                    <img class="dom84" src="assest/84/84_1.jpg" alt="reduga1">
+                    <p>Дом площадью 84 кв. м</p>
+                    <div class="container_84">
+                        <svg class="arrow_left_84" viewBox="0 0 5 9">
+                            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                        </svg>
+                    <div class="slider_wrapper_84">
+
+                        <div class="slider_84">
+
+                            <img src="./assest/84/84_1.jpg" alt="dom84-1">
+                            <img src="./assest/84/84_2.jpg" alt="dom84-2">
+                            <img src="./assest/84/84_3.jpg" alt="dom84-3">
+                            <img src="./assest/84/84_4.jpg" alt="84_4">
+                            <img src="./assest/84/84-5.jpg" alt="84_5">
+                            <img src="./assest/84/84_6.jpg" alt="84_6">
+                            <img src="./assest/84/84-7.jpg" alt="84_7">
+                            <img src="./assest/84/84-8.jpg" alt="84_8">
+
+                        </div><!-- slider -->
+                        <svg class="cross84" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 14.545L1.455 16 8 9.455 14.545 16 16 14.545 9.455 8 16 1.455 14.545 0 8 6.545 1.455 0 0 1.455 6.545 8z" fill-rule="evenodd"/>
+                        </svg>
+                    </div><!-- slider_wrapper -->
+                    <svg class="arrow_right_84" viewBox="0 0 5 9">
+                        <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                    </svg>
+                </div><!-- container -->
+                </div><!-- project -->
+
                 <div class="project">
+                    <img class="chekeril" src="./assest/chekeril/chekeril_1.jpg" alt="chekeril_1">
+                    <p>Дом в Чекериле</p>
+                    <div class="container_chekeril">
+                        <svg class="arrow_left_chekeril" viewBox="0 0 5 9">
+                            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                        </svg>
+                        <div class="slider_wrapper_chekeril">
+                            <div class="slider_chekeril">
+                                <img src="./assest/chekeril/chekeril_1.jpg" alt="chekeril_1">
+                                <img src="./assest/chekeril/chekeril_2.jpg" alt="chekeril_2">
+                                <img src="./assest/chekeril/chekeril_3.jpg" alt="chekeril_3">
+                                <img src="./assest/chekeril/chekeril_4.jpg" alt="chekeril_4">
+                                <img src="./assest/chekeril/chekeril_6.jpg" alt="chekeril_6">
+                                <img src="./assest/chekeril/chekeril_7.jpg" alt="chekeril_7">
+                                <img src="./assest/chekeril/chekeril_8.jpg" alt="chekeril_8">
+                                <img src="./assest/chekeril/chekeruk_5.jpg" alt="chekeril_5">
+                            </div><!-- slider -->
+                            <svg class="cross_chekeril" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0 14.545L1.455 16 8 9.455 14.545 16 16 14.545 9.455 8 16 1.455 14.545 0 8 6.545 1.455 0 0 1.455 6.545 8z" fill-rule="evenodd"/>
+                            </svg>
+                        </div><!-- slider_wrapper_chekeril -->
+                        <svg class="arrow_right_chekeril" viewBox="0 0 5 9">
+                            <path d="M0.419,9.000 L0.003,8.606 L4.164,4.500 L0.003,0.394 L0.419,0.000 L4.997,4.500 L0.419,9.000 Z" />
+                        </svg>
+                    </div><!-- container_chekeril -->
+                </div><!-- project -->
+
+
+<!--                 <div class="project">
                     <img class="dom84" src="./assest/84/IMG-20210826-WA0021.jpg" alt="dom84">
                     <p>Дом 84,5 квм</p>
                 </div>
@@ -134,8 +221,172 @@
                 <div class="project">
                     <img class="zeleniy" src="./assest/zeleniy yar/Screenshot_20231011_232621_VK.jpg" alt="zeleniy">
                     <p>Зеленный Яр</p>
-                </div>
+                </div> -->
             </div><!-- project_container -->
+
+        </section>
+
+        <section id="preclean">
+            <h2 class="preclean_h2">В предчистовую отделку входит</h2>
+            <div class="preclean_container">
+            <div class="preclean_text">
+                <ul>
+
+                    <li><strong>Фундамент</strong> в зависимости от проекта и геологии:
+                        <ul>
+                            <li>"Утепленная шведская плита"</li>
+                            <li>Железобетонная монолитная плита толщиной 200-300 мм, двойное армирование, утепление.</li>
+                            <li>Винтовые сваи с бетонированием.</li>
+                            <li>Бурозаливные сваи.</li>
+                            <li>Ленточный фундамент.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Стены</strong> в зависимости от выбранной технологии:
+                        <ul>
+                            <li>Монолитный армированный бетон в пенопластовой опалубке общей толщиной 250 мм.</li>
+                            <li>Porotherm (крупноформатный кирпич) толщиной от 380 мм.</li>
+                            <li>Газоблок толщиной от 300 мм.</li>
+                            <li>Каркасно-щитовая стена.</li>
+                            <li>Бревенчатые срубы диаметром от 220 мм.</li>
+                            <li>Профилированный брус 195х145 мм.</li>
+                            <li>Любые другие материалы, согласованные с Заказчиком.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Перекрытие</strong> (в двухэтажных домах):
+                        <ul>
+                            <li>Дощатый настил 40 мм по деревянным балкам 50х200 мм, звукоизоляция минеральной ватой.</li>
+                            <li>Железнобетонные плиты (оплачивается отдельно).</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Кровля</strong>
+                        <ul>
+                            <li>Деревянные стропила 50х200 мм или 50х150 мм, в зависимости от проекта.</li>
+                            <li>Обрешетка - доска деревянная 100х25 мм.</li>
+                            <li>Утепление минеральной ватой от 200 мм.</li>
+                            <li>Водосточная система в цвет кровли.</li>
+                            <li>Металлочерепица толщиной 0,5 мм.</li>
+                            <li>С21 профиль.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Окна пластиковые:</strong>
+                        <ul>
+                            <li>Двухкамерный стеклопакет.</li>
+                            <li>Трехкамерные стеклопакет.</li>
+                            <li>Откосы, подоконники белого цвета, отливы в цвет окон.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Дверь:</strong>
+                        <ul>
+                            <li>Утепленная металлическая дверь с терморазрывом.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Черновая лестица:</strong>
+                        <ul>
+                            <li>Лестница без перил (для двухэтажных домов).</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Стены:</strong>
+                        <ul>
+                            <li>Гипсокартон.</li>
+                            <li>Вагонка (каркасные дома).</li>
+                            <li>Штукатурка (каменные дома).</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Внетренние перегородки</strong> в зависимости от проекта:
+                        <ul>
+                            <li>Пазогребнивые плиты.</li>
+                            <li>Кирпич.</li>
+                            <li>Пеноблок 100 мм.</li>
+                            <li>Керамзитоблок.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Полы первого этажа:</strong>
+                        <ul>
+                            <li>Пеноплекс (пенопласт).</li>
+                            <li>Труба теплого пола.</li>
+                            <li>Полусухая стяжка.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Полы второго этажа:</strong>
+                        <ul>
+                            <li>ОСБ-плита (в санузле - цементо-стружечная плита).</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Водопроводные трубы:</strong>
+                        <ul>
+                            <li>Полипропиленноые трубы 20 мм и 25 мм.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Внутренная канализация:</strong>
+                        <ul>
+                            <li>Канализационные трубы 50 мм и 110 мм.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Вентиляция:</strong>
+                        <ul>
+                            <li>Пластиковые трубы 110 мм в санузлах, котельной и на кухне.</li>
+                            <li>Возможна рекулерация.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Электроразводка:</strong>
+                        <ul>
+                            <li>Медные кабель ВВГ в гофре.</li>
+                            <li>Пластиковый вводной электрошкаф.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Система отопления:</strong>
+                        <ul>
+                            <li>На первом этаже - теплый пол на жидком теплоносителе.</li>
+                            <li>На втором этаже - радиаторы водяного отопления.</li>
+                            <li>Электрокотел от 9 кВт до 12 кВт.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Фасад</strong>:
+                        <ul>
+                            <li>Фасадная штукатурка с текстурной покраской.</li>
+                            <li>Деревянные или каменные элементы согласно дизайн-проекта, либо облицовка кирпичем.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Водопровод</strong>:
+                        <ul>
+                            <li>Водопроводная труба до колодца центрольного водопровода.</li>
+                            <li>Скажина (оплачивается отдельно).</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Подключение дома</strong> к электрощитку со счетчиками кабелей СИП (по воздуху). Проведение кабеля под землей оплачивается отдельно.
+                    </li>
+
+                    <li><strong>Канализация</strong>:
+                        <ul>
+                            <li>Две выгребные ямы с переливом по два кольца диаметром 1,5 м.</li>
+                            <li>Одна выгребная яма с кольцом диаметром 0,7 м с полимерной крышкой.</li>
+                            <li>Септик оплачивается отдельно.</li>
+                        </ul>
+                    </li>
+
+                    <li><strong>Подключение к газу</strong> оплачивается отдельно.</li>
+
+                </ul>
+            </div><!-- preclean_text -->
+            </div>
 
         </section>
 
@@ -161,7 +412,7 @@
                     <a href="https://m.vk.com/bablozavr" target="_blank"><p>ВКОНТАКТЕ</p></a>
 
                     <a href="https://wa.me/+79124484005" target="_blank"><img src="./assest/whatsapp_tile_logo_icon_169898.png" alt="watsapp"></a>
-                    <a href="https://wa.me/+79124484005" target="_blank"><p>+7-912-448-40-05</p></a>
+                    <a href="https://wa.me/+79124484005" target="_blank"><p class="tel">+7-912-448-40-05</p></a>
 
                     <a href="viber://chat?number=+79124484005"><img src="./assest/viber_tile_logo_icon_170260.png" alt="icon_viber"></a><a href="viber://chat?number=+79124484005"><p>+7-912-448-40-05</p></a>
                 </div><!-- connection -->
@@ -173,7 +424,7 @@
     <footer>
         <div class="footer_container">
             <p>Строительная компания "ДОМА"</p>
-            <p>2023</p>
+            <p>2024</p>
         </div>
     </footer>
     <script src="./script.js"></script>

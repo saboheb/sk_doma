@@ -4,19 +4,48 @@
     font-family: 'Lato', sans-serif;
 }
 
+
 header {
-    background-image: url(../sk_doma/assest/Screenshot_20231011_232621_VK.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 800px;
-    margin: auto;
+    background-color: gray;
+}
+
+.three_lines {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 40px;
+    cursor: pointer;
+}
+
+.line1,
+.line2,
+.line3 {
+    width: 30px;
+    height: 3px;
+    background-color: orange;
+    box-shadow: 1px 1px;
+}
+
+.active_line1 {
+    transform: rotate(45deg);
+    margin-bottom: -27px;
+}
+
+.active_line2 {
+    display: none;
+}
+
+.active_line3 {
+    transform: rotate(-45deg);
 }
 
 .header_container {
     max-width: 1400px;
     margin: auto;
     padding-top: 10px;
+    padding-bottom: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,8 +80,7 @@ header {
     margin-right: 10px;
 }
 
-.menu ul a,
-.contacts a {
+.menu ul a {
     text-decoration: none;
     font-family: 'Lato', sans-serif;
     font-weight: 600;
@@ -74,26 +102,71 @@ header {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 20px;
+    text-shadow: 1px 1px 2px black;
     color: orange;
     vertical-align: middle;
+}
+
+@media (max-width: 430px) {
+    .tel {
+        display: none;
+    }
+}
+
+
+@media (max-width: 877px) {
+    .menu { 
+        position: absolute;
+        top: 50px;
+        left: -270px;
+        width: 220px;
+        height: 130px;
+        background-color: gray;
+    }
+}
+
+.active_menu {
+    transform: translateX(270px);
+    transition-property: transform;
+    transition-duration: 1s;
+}
+
+@media (min-width: 878px) {
+    .three_lines { 
+        display: none;
+    }
+}
+
+
+/* welcome */
+
+.welcome {
+    background-color: gray;
+}
+
+.greeting {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    height: 500px;
+    max-width: 1400px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: auto;
+    background-image: url('./assest/Screenshot_20231011_232621_VK.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em;
 }
 
 h1 {
     text-align: center;
     color: orange;
     text-shadow: 1px 1px 2px black;
-    padding-left: 40px;
- 
-}
-
-.greeting {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    color: white;
-    max-width: 1400px;
-    margin: 200px auto;
 }
 
 .slogan p {
@@ -107,13 +180,14 @@ h1 {
 .call_wrapper {
     display: flex;
     justify-content: center;
-    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 2px black;
 }
 
 .call {
     max-width: 380px;
     background-color: gray;
-    border-radius: 10px;
+    border-radius: 1em;
 }
 
 .order_the_call {
@@ -144,8 +218,35 @@ h1 {
     cursor: pointer;
 }
 
-.checkbox {
+.check {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.agree {
     cursor: pointer;
+}
+
+.agree:hover {
+    text-decoration: underline;
+}
+
+.text_agree {
+    position: fixed;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    color: black;
+    height: 100px;
+    display: none;
+}
+
+.cross {
+    cursor: pointer;
+    text-align: end;
 }
 
 #button_form {
@@ -159,9 +260,9 @@ h1 {
 
 /* about section */
 
-/* #about {
-    background-color: #dcd5d2
-} */
+#about {
+    background-color: gray;
+}
 
 .about_container {
     max-width: 1400px;
@@ -181,14 +282,20 @@ h1 {
 
 .about_container img {
     max-width: 600px;
+
 }
-
-
 
 .about_container h2 {
     padding-left: 40px;
-    color: black;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
     text-align: center;
+}
+
+.about_container li {
+    color:white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
 }
 
 .about_container {
@@ -196,12 +303,24 @@ h1 {
     font-size: 16px;
 }
 
+.info {
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+@media (max-width: 550px) {
+    .about_company_text ul {
+    padding-inline-start: 5px;
+    line-height: normal;
+    font-size: 14px;
+    }
+}
+
 /* section project */
 
 #progects {
     max-width: 1400px;
-    margin: auto;
-    border: 1px red solid;
+    margin: 50px auto;
 }
 
 #progects h2 {
@@ -209,6 +328,7 @@ h1 {
     color: orange;
     text-shadow: 1px 1px 2px black;
     font-size: 2em;
+    padding-bottom: 50px;
 }
 
 .project_container {
@@ -228,19 +348,105 @@ h1 {
     cursor: pointer;
 }
 
-.big_raduga {
+.project p {
+    text-align: center;
+}
+
+.container_84,
+.container_chekeril {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+}
+
+.slider_wrapper_84,
+.slider_wrapper_chekeril {
+    overflow: hidden;
+    max-width: 700px;
+}
+
+.slider_84,
+.slider_chekeril {
+    display: flex;
+    position: relative;
+    left: 0px;
+}
+
+.arrow_left_84,
+.arrow_left_chekeril {
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);
+    fill: orange;
+    cursor: pointer;
+}
+
+.arrow_right_84,
+.arrow_right_chekeril {
+    width: 50px;
+    height: 50px;
+    fill: orange;
+    cursor: pointer;
+}
+
+.arrow_left_84:hover,
+.arrow_right_84:hover,
+.arrow_left_chekeril:hover,
+.arrow_right_chekeril:hover,
+.cross84:hover,
+.cross_chekeril:hover {
+    fill: red;
+}
+
+.cross84,
+.cross_chekeril {
+    fill: orange;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 50px;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+/* .big_raduga {
     position: fixed;
     z-index: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    background-color: gray;
+    box-shadow: 7px 7px 5px black;
+}
+
+
+.big_raduga_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px green solid;
 }
 
 .big_raduga img {
-    width: 70vw;
+    width: 60vw;
 }
 
+.big_raduga p {
+    padding-bottom: 2px;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+} */
 
 
 /* contacts */
@@ -281,11 +487,37 @@ h1 {
     text-decoration: underline;
 }
 
+#preclean {
+    background-color: gray;
+}
+
+.preclean_text {
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.preclean_text li {
+    line-height: 1.7em;
+}
+
+.preclean_h2 {
+    padding-left: 40px;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
 
 
 footer {
-    background-color: #dcd5d2;
+    background-color: gray;
     font-family: 'Lato', sans-serif;
+    color: white;
     height: 80px;
 }
 
