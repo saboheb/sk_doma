@@ -348,7 +348,76 @@ h1 {
     cursor: pointer;
 }
 
-.big_raduga {
+.project p {
+    text-align: center;
+}
+
+.container_84,
+.container_chekeril {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    align-items: center;
+}
+
+.slider_wrapper_84,
+.slider_wrapper_chekeril {
+    overflow: hidden;
+    max-width: 700px;
+}
+
+.slider_84,
+.slider_chekeril {
+    display: flex;
+    position: relative;
+    left: 0px;
+}
+
+.arrow_left_84,
+.arrow_left_chekeril {
+    width: 50px;
+    height: 50px;
+    transform: rotate(180deg);
+    fill: orange;
+    cursor: pointer;
+}
+
+.arrow_right_84,
+.arrow_right_chekeril {
+    width: 50px;
+    height: 50px;
+    fill: orange;
+    cursor: pointer;
+}
+
+.arrow_left_84:hover,
+.arrow_right_84:hover,
+.arrow_left_chekeril:hover,
+.arrow_right_chekeril:hover,
+.cross84:hover,
+.cross_chekeril:hover {
+    fill: red;
+}
+
+.cross84,
+.cross_chekeril {
+    fill: orange;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: 50px;
+    top: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+/* .big_raduga {
     position: fixed;
     z-index: 1;
     top: 50%;
@@ -358,7 +427,6 @@ h1 {
     background-color: gray;
     box-shadow: 7px 7px 5px black;
 }
-
 
 
 .big_raduga_container {
@@ -378,23 +446,7 @@ h1 {
     font-weight: 600;
     color: white;
     text-shadow: 1px 1px 2px black;
-}
-
-.arrow_left {
-    rotate: 180deg;
-    border: 1px red solid;
-    height: 100%;
-    width: 30px;
-    cursor: pointer;
-    display: block;
-
-}
-
-.arrow_right {
-    width: 30px;
-    border: 1px red solid;
-    height: 100%;
-}
+} */
 
 
 /* contacts */
@@ -435,6 +487,31 @@ h1 {
     text-decoration: underline;
 }
 
+#preclean {
+    background-color: gray;
+}
+
+.preclean_text {
+    max-width: 1200px;
+    margin: auto;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+    font-weight: 600;
+    padding-bottom: 50px;
+}
+
+.preclean_text li {
+    line-height: 1.7em;
+}
+
+.preclean_h2 {
+    padding-left: 40px;
+    color: orange;
+    text-shadow: 1px 1px 2px black;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
 
 
 footer {
