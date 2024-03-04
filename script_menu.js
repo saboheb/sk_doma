@@ -15,7 +15,7 @@ function menuAppearance() {
   thirdLine.classList.toggle('active_line3');
 }
 
-menuLines.addEventListener('click', menuAppearance)
+menuLines.addEventListener('click', menuAppearance);
 
 //agree
 
@@ -33,7 +33,5 @@ function closeAgreeText() {
   agreeBlock.style.display = 'none';
 }
 
-crossAgree.addEventListener('click', closeAgreeText)
-
-//sliders
+crossAgree.addEventListener('click', closeAgreeText);
 
