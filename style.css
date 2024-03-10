@@ -405,7 +405,7 @@ h1 {
 }
 
 .shale_face {
-    background-image: url(./assest/SHale/shale_face.jpg);
+    background-image: url(./assest/SHale/shale_2.jpg);
 }
 
 .shudya_face {
@@ -436,6 +436,10 @@ h1 {
     text-shadow: 1px 1px 2px black;
     font-weight: 600;
     padding-bottom: 50px;
+}
+
+.preclean_text strong {
+    color: orange;
 }
 
 .preclean_text li {
@@ -518,6 +522,7 @@ footer {
     gap: 10px;
     margin: 5px;
 }
+
 .slider {
     max-width: 90%;
     max-height: 95%;
@@ -527,14 +532,12 @@ footer {
 
 .slider_line {
     display: flex;
-    gap: 1px;
-    transition: all ease 2ms;
+/*     gap: 5px; */
     transition: transform 1s;
 }
 
 .arrow_next,
 .arrow_prev {
-/*     position: absolute; */
     width: 80px;
     height: 80px;
     cursor: pointer;
