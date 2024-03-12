@@ -115,7 +115,7 @@ header {
 }
 
 
-@media (max-width: 877px) {
+@media (max-width: 1130px) {
     .menu { 
         position: absolute;
         top: 50px;
@@ -132,7 +132,7 @@ header {
     transition-duration: 1s;
 }
 
-@media (min-width: 878px) {
+@media (min-width: 1129px) {
     .three_lines { 
         display: none;
     }
@@ -409,7 +409,7 @@ h1 {
 }
 
 .shudya_face {
-    background-image: url(./assest/Shudya/shudya_face.jpg);
+    background-image: url(./assest/Shudya/uzhniy_park_1.jpg);
 }
 
 .slav_face {
@@ -457,7 +457,7 @@ h1 {
 
 #contacts {
     max-width: 1400px;
-    margin: auto;
+    margin: 10px auto;
 }
 
 .contacts_wrapper {
@@ -499,17 +499,25 @@ h1 {
 }
 
 
-
 footer {
+    margin-top: 10px;
     background-color: gray;
     font-family: 'Lato', sans-serif;
     color: white;
-    height: 80px;
 }
 
 .footer_container {
+    padding: 10px;
     text-align: center;
+    line-height: 2em;
 }
+
+.footer_container p {
+    text-shadow: 1px 1px black;
+    font-weight: 700;
+}
+
+/* слайдеры */
 
 .dom_84 {
     background-color: gray;
@@ -553,4 +561,11 @@ footer {
 .arrow_next:hover,
 .arrow_prev:hover {
     transform: scale(1.1);
+}
+
+@media (max-width: 1000px) {
+    .arrow_next,
+    .arrow_prev {
+        display: none;
+    }
 }
