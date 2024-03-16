@@ -519,6 +519,13 @@ footer {
 
 /* слайдеры */
 
+.flex_carusel {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .dom_84 {
     background-color: gray;
 }
@@ -540,7 +547,6 @@ footer {
 
 .slider_line {
     display: flex;
-/*     gap: 5px; */
     transition: transform 1s;
 }
 
