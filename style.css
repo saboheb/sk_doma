@@ -524,54 +524,54 @@ footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.dom_84 {
+  }
+  
+  .dom_84 {
     background-color: gray;
-}
-
-.carusel {
+  }
+  
+  .carusel {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
     margin: 5px;
-}
-
-.slider {
+  }
+  
+  .slider {
     max-width: 90%;
     max-height: 95%;
     margin: auto;
     overflow: hidden;
-}
-
-.slider_line {
+  }
+  
+  .slider_line {
     display: flex;
     transition: transform 1s;
-}
-
-.arrow_next,
-.arrow_prev {
+  }
+  
+  .arrow_next,
+  .arrow_prev {
     width: 80px;
     height: 80px;
     cursor: pointer;
     right: 0;
     fill: orange;
     transition: transform .3s;
-}
-
-.arrow_prev svg {
+  }
+  
+  .arrow_prev svg {
     transform: rotate(180deg);
-}
-
-.arrow_next:hover,
-.arrow_prev:hover {
+  }
+  
+  .arrow_next:hover,
+  .arrow_prev:hover {
     transform: scale(1.1);
-}
-
-@media (max-width: 1000px) {
+  }
+  
+  @media (max-width: 1000px) {
     .arrow_next,
     .arrow_prev {
         display: none;
     }
-}
+  }

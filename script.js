@@ -1,3 +1,44 @@
+'use strict'
+
+//menu
+
+const menuLines = document.querySelector('.three_lines');
+const menu = document.querySelector('.menu');
+const firstLine = document.querySelector('.line1');
+const secondLine = document.querySelector('.line2');
+const thirdLine = document.querySelector('.line3');
+
+function menuAppearance() {
+  menu.classList.toggle('active_menu');
+  firstLine.classList.toggle('active_line1');
+  secondLine.classList.toggle('active_line2');
+  thirdLine.classList.toggle('active_line3');
+}
+
+menuLines.addEventListener('click', menuAppearance);
+
+//agree
+
+const agreeBlock = document.querySelector('.text_agree');
+const agreeText = document.querySelector('.agree');
+const crossAgree = document.querySelector('.cross');
+
+function appearanceOfAgreeBlock() {
+  agreeBlock.style.display = 'block';
+}
+
+agreeText.addEventListener('click', appearanceOfAgreeBlock);
+
+function closeAgreeText() {
+  agreeBlock.style.display = 'none';
+}
+
+crossAgree.addEventListener('click', closeAgreeText);
+
+//slider
+
+"use stick"
+
 const images = document.querySelectorAll('.slider .slider_line img');
 const sliderLine = document.querySelector('.slider_line');
 let count = 0;
@@ -46,7 +87,6 @@ let posX1 = null;
 function handleTouchStart(event) {
   const firstTouch = event.touches[0];
   posX1 = firstTouch.clientX;
-  console.log(posX1);
 }
 
 function handleTouchMove(event) {
@@ -57,7 +97,6 @@ function handleTouchMove(event) {
   let xDiff = posX2 - posX1;
 
   if (xDiff < 0) {
-    console.log('right');
     count++;
     if (count >= images.length) {
       count = images.length - 1;
@@ -65,7 +104,6 @@ function handleTouchMove(event) {
     rollSlider();
 
   } else if (xDiff > 0) {
-    console.log('left');
     count--;
     if (count < 0) {
     count = 0;
@@ -74,4 +112,3 @@ function handleTouchMove(event) {
   }
   posX1 = null;
 }
-
