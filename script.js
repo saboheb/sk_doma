@@ -34,3 +34,28 @@ function closeAgreeText() {
 }
 
 crossAgree.addEventListener('click', closeAgreeText);
+
+//form
+
+document.addEventListener('DOMContentLoaded', function() {
+  const form = document.getElementById('form');
+  form.addEventListener('submit', formSend); //при отправке форму переходим в функцию formSend
+
+
+  async function formSend(e) {
+    e.preventDefault(); //выключили кнопку "отправить"
+
+    let formData = new FormData(form); //вытягивает данные полей
+    let response = await fetch('sendmail.php', {
+      method: 'POST',
+      body: formData
+    });
+    if (response.ok) {
+      let result = await response.json();
+      alert(result.message);
+      form.reset();
+    } else {
+      alert("Ошибка");
+    }
+  }
+});//DOMContentLoaded

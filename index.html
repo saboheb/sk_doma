@@ -42,6 +42,7 @@
             <div class="greeting">
                     <div class="slogan">
                     <h1>СТРОИТЕЛЬНАЯ КОМПАНИЯ "ДОМА"</h1>
+                    <p>Строим дома по всей Удмуртии</p>
                     <p>Наши преимущества - Ваша выгода</p>
                 </div>
     
@@ -54,21 +55,25 @@
                     </div><!-- order_the_call -->
     
                     <div class="form">
-                        <form action="#">
+                        <form action="#" id="form" class="form_body">
                             <div class="form_handler">
-                            <label><input type="text" placeholder="Ваше имя"></label>
-                            <label><input type="text" placeholder="Ваш телефон"></label>
+                                <label for="form_name" class="form_name"></label>
+                                <input id="form_name" name='name' class="form_name _req" type="text" placeholder="Ваше имя">
 
-                            <div class="check">
-                            <input type="checkbox" name="agree" id="checkbox">
-                            <p class="agree">Согласие на обработку персональных данных</p>
-                            <div class="text_agree">
-                                <p class="cross">&#10060;</p>
-                                <p>согласие на обработку персональных данных</p>
-                            </div>
-                        </div><!-- check -->
+                                <label for="form_phone" class="form_phone"></label>
+                                <input id="form_phone" name='phone' class="form_input" type="text" placeholder="Ваш телефон">
 
-                            <button id="button_form">Отправить</button>
+                                <div class="check">
+                                    <input type="checkbox" name="agree" id="formAgreement" class="checkbox_input _req" checked>
+                                    <label for="formAgreement">Я даю свое согласие на обработку персональных данных в соответствии с условиями</label>
+
+                                <div class="text_agree"><!-- display none -->
+                                    <p class="cross">&#10060;</p>
+                                    <p>согласие на обработку персональных данных</p>
+                                </div>
+                                </div><!-- check -->
+
+                            <button id="button_form" class="form_button" type="submit">Отправить</button>
                             </div><!-- form_handler -->
                         </form>
                     </div><!-- form -->
@@ -261,7 +266,7 @@
                         </ul>
                     </li>
 
-                    <li><strong>Внетренние перегородки</strong> в зависимости от проекта:
+                    <li><strong>Внутренние перегородки</strong> в зависимости от проекта:
                         <ul>
                             <li>Пазогребнивые плиты.</li>
                             <li>Кирпич.</li>
