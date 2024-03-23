@@ -19,7 +19,7 @@ menuLines.addEventListener('click', menuAppearance);
 
 //agree
 
-const agreeBlock = document.querySelector('.text_agree');
+/* const agreeBlock = document.querySelector('.text_agree');
 const agreeText = document.querySelector('.agree');
 const crossAgree = document.querySelector('.cross');
 
@@ -33,19 +33,23 @@ function closeAgreeText() {
   agreeBlock.style.display = 'none';
 }
 
-crossAgree.addEventListener('click', closeAgreeText);
+crossAgree.addEventListener('click', closeAgreeText); */
+
 
 //form
 
 document.addEventListener('DOMContentLoaded', function() {
   const form = document.getElementById('form');
+  console.log(form);
   form.addEventListener('submit', formSend); //при отправке форму переходим в функцию formSend
-
 
   async function formSend(e) {
     e.preventDefault(); //выключили кнопку "отправить"
 
     let formData = new FormData(form); //вытягивает данные полей
+    console.log(formData);
+
+    form.classList.add('_sending');
     let response = await fetch('sendmail.php', {
       method: 'POST',
       body: formData
@@ -57,5 +61,5 @@ document.addEventListener('DOMContentLoaded', function() {
     } else {
       alert("Ошибка");
     }
-  }
+  } //formSend
 });//DOMContentLoaded

@@ -11,7 +11,7 @@
   $mail->IsHTML(true);
 
 
-  $mail->setFrom('скдома18рф');// от кого 
+  $mail->setFrom('info@скдома18.рф', 'скдома18');// от кого 
   $mail->addAddress('skdoma18@mail.ru'); // куда отправить
   $mail->Subject = 'Новая заявка';
 
